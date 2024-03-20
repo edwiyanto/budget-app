@@ -110,16 +110,6 @@ def create_spend_chart(categories):
     return(result)
 
 def main():
-    # food = Category("Food")
-    # food.deposit(1000, "deposit")
-    # food.withdraw(10.15, "groceries")
-    # food.withdraw(15.89, "restaurant and more food for dessert")
-
-    # clothing = Category("clothing")
-    # food.transfer(50, clothing)
-    # clothing.withdraw(20)
-    # print(food)
-    # print(clothing)
     food = Category("food")
     entertainment = Category("entertainment")
     business = Category("business")
@@ -129,16 +119,7 @@ def main():
     food.withdraw(105.55)
     entertainment.withdraw(33.40)
     business.withdraw(10.99)
-    expected = "Percentage spent by category\n100|          \n 90|          \n 80|          \n 70|    o     \n 60|    o     \n 50|    o     \n 40|    o     \n 30|    o     \n 20|    o  o  \n 10|    o  o  \n  0| o  o  o  \n    ----------\n     B  F  E  \n     u  o  n  \n     s  o  t  \n     i  d  e  \n     n     r  \n     e     t  \n     s     a  \n     s     i  \n           n  \n           m  \n           e  \n           n  \n           t  "
-    # expected = "Percentage spent by category\n100|          \n 90|          \n 80|          \n 70|    o     \n 60|    o     \n 50|    o     \n 40|    o     \n 30|    o     \n 20|    o  o  \n 10|    o  o  \n  0| o  o  o  \n    ----------\n     B  F  E  \n     u  o  n  \n     s  o  t  \n     i  d  e  \n     n     r  \n     e     t  \n     s     a  \n     s     i  \n           n  \n           m  \n           e  \n           n  \n           t  "
-    # print(expected)
-    result = create_spend_chart([business,food,entertainment])
-    test = []
-    test.append(result)
-    print(test)
+    print(create_spend_chart([business,food,entertainment]))
+
 if __name__=="__main__":
     main()
-
-# 'Percentage spent by category\n100|          \n 90|          \n 80|          \n 70|    o     \n 60|    o     \n 50|    o     \n 40|    o     \n 30|    o     \n 20|    o  o  \n 10|    o  o  \n  0| o  o  o  \n    ----------\n     b  f  e \n     u  o  n \n     s  o  t \n     i  d  e \n     n     r \n     e     t \n     s     a \n     s     i \n           n \n           m \n           e \n           n \n           t '
-# "Percentage spent by category\n100|          \n 90|          \n 80|          \n 70|    o     \n 60|    o     \n 50|    o     \n 40|    o     \n 30|    o     \n 20|    o  o  \n 10|    o  o  \n  0| o  o  o  \n    ----------\n     B  F  E  \n     u  o  n  \n     s  o  t  \n     i  d  e  \n     n     r  \n     e     t  \n     s     a  \n     s     i  \n           n  \n           m  \n           e  \n           n  \n           t  "
-# 'Percentage spent by category\n100|          \n 90|          \n 80|          \n 70|    o     \n 60|    o     \n 50|    o     \n 40|    o     \n 30|    o     \n 20|    o  o  \n 10|    o  o  \n  0| o  o  o  \n    ----------\n     b  f  e  \n     u  o  n  \n     s  o  t  \n     i  d  e  \n     n     r  \n     e     t  \n     s     a  \n     s     i  \n           n  \n           m  \n           e  \n           n  \n           t '
